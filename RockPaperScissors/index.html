@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1">Rock Paper Scissors</h1>
+        <p class="sub-text">With HTML, CSS and Javascript</p>
+    </header>
+
+    <main>
+        <!-- POINTS -->
+        <p class="instructions" id="instructions">First to get to 5 points wins!</p>
+        <div class="game-box">
+            <p class="name name-player" id="player">Player</p>
+            <p class="name name-pc" id="pc">PC</p>
+            <p class="points" id="points">
+                <span id="player-points">0</span>
+                <span>-</span>
+                <span id="points-pc">0</span>
+            </p>
+        </div>
+        <!-- WEAPONS -->
+        <div class="weapons-box" id="weapons-box">
+            <h2 class="choose-weapon">Choose a weapon</h2>
+            <div class="weapons-container">  
+                <button class="weapon-btn" id="rock">Rock🪨</button>
+                <button class="weapon-btn" id="paper">Paper📄</button>
+                <button class="weapon-btn" id="scissors">Scissors✂️</button>
+            </div>
+        </div>
+
+        <div class="message disabled" id="message-div">
+            <p class="elections-box">
+                Player Chose: <span class="election" id="election-player"></span> <br>
+                PC Chose: <span class="election" id="election-pc"></span>
+            </p>
+            <p id="won-point"></p>
+        </div>
+        <button class="restart disabled" id="restart-btn">Restart Game</button>
+    </main>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
